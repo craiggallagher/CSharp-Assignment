@@ -1,0 +1,16 @@
+F:\year2 coding\S00133386\Assignment Done\Assignment\bin\Debug\Assignment.exe.config
+F:\year2 coding\S00133386\Assignment Done\Assignment\bin\Debug\Assignment.exe
+F:\year2 coding\S00133386\Assignment Done\Assignment\bin\Debug\Assignment.pdb
+F:\year2 coding\S00133386\Assignment Done\Assignment\obj\Debug\MainWindow.baml
+F:\year2 coding\S00133386\Assignment Done\Assignment\obj\Debug\MainWindow.g.cs
+F:\year2 coding\S00133386\Assignment Done\Assignment\obj\Debug\App.g.cs
+F:\year2 coding\S00133386\Assignment Done\Assignment\obj\Debug\Assignment_MarkupCompile.cache
+F:\year2 coding\S00133386\Assignment Done\Assignment\obj\Debug\Assignment.g.resources
+F:\year2 coding\S00133386\Assignment Done\Assignment\obj\Debug\Assignment.Properties.Resources.resources
+F:\year2 coding\S00133386\Assignment Done\Assignment\obj\Debug\Assignment.csproj.GenerateResource.Cache
+F:\year2 coding\S00133386\Assignment Done\Assignment\obj\Debug\Assignment.exe
+F:\year2 coding\S00133386\Assignment Done\Assignment\obj\Debug\Assignment.pdb
+F:\year2 coding\S00133386\Assignment Done\Assignment\obj\Debug\Assignment.csprojResolveAssemblyReference.cache
+E:\year2 coding\S00133386\Assignment Done\Assignment\bin\Debug\Assignment.exe.config
+E:\year2 coding\S00133386\Assignment Done\Assignment\obj\Debug\Assignment.exe
+E:\year2 coding\S00133386\Assignment Done\Assignment\obj\Debug\Assignment.pdb

@@ -1,0 +1,81 @@
+﻿<Window x:Class="Assignment.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Loaded="Window_Loaded_1"
+        Title="MainWindow" Height="350" Width="725">
+    <Grid Background="AliceBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            
+            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="4"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            
+        </Grid.ColumnDefinitions>
+        <TextBlock Name="txbWard" Grid.Row="0" Grid.Column="0" FontSize="16" FontWeight="Bold" Margin="10" >Ward</TextBlock>
+        <ListBox Background="LightCoral"  Name="lstWard" Grid.Row="1" Grid.Column="0" SelectionChanged="lstWard_SelectionChanged_1"></ListBox>
+        <Expander Grid.Row="2" Grid.Column="0" Background="AntiqueWhite" IsExpanded="True" Header="Ward Details" ExpandDirection="Down">
+            <StackPanel Orientation="Vertical"  Grid.Row="2" Grid.Column="0">
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="20,0,28,5" FontSize="18">Name</TextBlock>
+                    <TextBox TextChanged="txbWardName_TextChanged_1" Margin="8" Width="135" Height="26" Name="txbWardName" ></TextBox>
+                </StackPanel>
+
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="20,0,14,5" FontSize="18">Capacity</TextBlock>
+                    <Slider  Name="sldLimit" Width="180" Minimum="1" Maximum="10" SmallChange="1"></Slider>
+                </StackPanel>
+
+                <Button Name="btnWAdd"  IsEnabled="False"  Margin="40,0,0,5" Width="100" FontSize="18" Content="Add Ward" Click="Button_Click_1"></Button>
+
+            </StackPanel>
+        </Expander>
+     
+        
+        <TextBlock Grid.Row="0" Grid.Column="2" FontWeight="Bold" FontSize="16" Margin="10">Patients</TextBlock>
+        
+        <ListBox Background="LightCoral"  Name="lstPatient" Grid.Row="1" Grid.Column="2" SelectionChanged="lstPatient_SelectionChanged_1"></ListBox>
+        <Expander Grid.Row="2" Grid.Column="2" Background="AntiqueWhite" IsExpanded="True" Header="Patient Details" ExpandDirection="Down">
+            <StackPanel Orientation="Vertical"  Grid.Row="2" Grid.Column="2">
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="20,0,28,5" FontSize="18">Name</TextBlock>
+                    <TextBox TextChanged="txbPName_TextChanged_1" Name="txbPName" Margin="8" Width="135" Height="26"></TextBox>
+                </StackPanel>
+
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="20,0,40,5" FontSize="18">DOB</TextBlock>
+                    <DatePicker Name="dpDOB" Margin="8" Width="135" Height="26"></DatePicker>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="20,0,40,5" FontSize="18">Blood Type</TextBlock>
+                    <RadioButton Name="rdbType1" GroupName="Type" Checked="rdbType_Checked_1">A</RadioButton>
+                    <RadioButton Name="rdbType2" GroupName="Type" Checked="rdbType2_Checked_1">B</RadioButton>
+                    <RadioButton Name="rdbType3" GroupName="Type" Checked="rdbType3_Checked_1">AB</RadioButton>
+                    <RadioButton Name="rdbType4" GroupName="Type" Checked="rdbType4_Checked_1">O</RadioButton>
+                </StackPanel>
+                <Button Name="btnPAdd" IsEnabled="False"  Margin="40,0,0,5" Width="100" FontSize="18" Content="Add Ward" Click="Button_Click"></Button>
+
+            </StackPanel>
+        </Expander>
+         
+        
+        <TextBlock Grid.Row="0" Grid.Column="3" FontSize="18" FontWeight="Bold" Margin="10">Details</TextBlock>
+        <TextBlock Name="lblOutName" Grid.Row="1" Grid.Column="3"></TextBlock>
+
+        
+        <GridSplitter Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"></GridSplitter>
+        <Image Name="imgBlood" Grid.Row="2" Grid.Column="3" />
+        
+        
+    </Grid>
+</Window>
